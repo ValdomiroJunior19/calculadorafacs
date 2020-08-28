@@ -1,0 +1,19 @@
+form input {
+    background-color: #fafafa;
+    height: 2.3rem;
+    border: 1px solid #fff;
+    outline: 0;
+}
+
+button {
+    width: 12.5rem;
+}
+
+.textarea-block {
+    margin-top: 7vh;
+}
+
+textarea {
+    height: 16vh;
+    resize: none;
+}

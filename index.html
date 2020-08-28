@@ -1,11 +1,15 @@
 <!DOCTYPE HTML>
 <html lang=”pt-br”>
+
 <head>
     <meta charset=”UTF-8”>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css"  href="static/css/style.css">
-    <link rel="stylesheet" type="text/css"  href="static/css/partis/header.css">
-    <link rel="stylesheet" type="text/css"  href="static/css/partis/section.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/partis/header.css">
+    <link rel="stylesheet" type="text/css" href="static/css/partis/section.css">
+    <link rel="stylesheet" type="text/css" href="static/css/partis/form.css">
+
+    <script defer src="/static/javascript/main.js"></script>
 
     <title>Simulador de Notas - Unifacs</title>
 </head>
@@ -17,20 +21,26 @@
         </header>
     </div>
     <section>
-        <form action>
+        <form id="form">
             <div>
-                <label for="nota1">Nota A1:</label><br><br>
-                <input type="number" name="nota1" id="nota1" /><br><br>
-                <label for="nota2">Nota A2:</label><br><br>
-                <input type="number" name="nota2" id="nota2" /><br><br>
+                <label for="nota1">Nota A1:</label><br>
+                <input type="number" name="nota1" id="nota1" required/><br><br>
+                <label for="nota2">Nota A2:</label><br>
+                <input type="number" name="nota2" id="nota2" required/><br><br>
             </div>
         </form>
-        <div class="btn btn-outline-dark">
-            <h4>Calcular</h4>
+        <button class="btn btn-lg btn-dark">
+            Calcular
+        </button>
+
+        <div>
+            <div class="textarea-block">
+                <textarea id="textarea" disabled></textarea>
+            </div>
         </div>
     </section>
 
 
 </body>
-</html>
 
+</html>
