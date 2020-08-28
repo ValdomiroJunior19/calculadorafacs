@@ -16,10 +16,13 @@ document.querySelector('button').addEventListener('click', () => {
 
     // aqui e a logica para saber se ele passou ou nao 
     if (media > 0.0 && media < 6) {
-        textarea.value = `Sua media = ${(Math.floor(media).toFixed(2))}
+
+        //Math.floor() =  er para aredondar o numero tira os pontos flotoantes
+        // .toFixed() er para falar a quantidade de pontos flotoantes que tera ex: media 10.3
+        textarea.value = `Sua media = ${(Math.floor(media).toFixed(1))}
          voce precisa de poucos pontos para conseguir passar na materia`
     } else if (media > 5) {
-        textarea.value = `Sua media = ${(Math.floor(media).toFixed(2))} Voce foi aprovado`
+        textarea.value = `Sua media = ${(Math.floor(media).toFixed(1))} Voce foi aprovado`
     }
 
     // nessa parte ele ta reiniciando os numeros depois de 20 segundos
